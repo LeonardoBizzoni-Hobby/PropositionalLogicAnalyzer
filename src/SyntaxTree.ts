@@ -1,6 +1,5 @@
 import { Formula } from "./formula";
 import { LogicSymbol } from "./logic_symbol";
-// import p5 from "p5";
 
 export class SyntaxTree {
 	root: LogicSymbol;

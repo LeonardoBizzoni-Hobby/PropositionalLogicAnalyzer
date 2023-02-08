@@ -1,5 +1,4 @@
 import { Formula } from "./formula";
-import { SyntaxTree } from "./SyntaxTree";
 
 export function checkFormula() {
 	let input = (document.getElementById("formulaInput") as HTMLInputElement).value;
@@ -9,11 +8,9 @@ export function checkFormula() {
 	if (formula.fbf) {
 		(document.getElementById("invalidFormula") as HTMLElement).setAttribute("style", "display: none");
 
-		let tree = new SyntaxTree(formula);
-
 		let h2 = document.getElementById("treeString") as HTMLElement;
 		h2.setAttribute("style", "display: block");
-		h2.innerHTML = `Syntax tree: </br><b style="padding-left: 20px">${tree}</b>`;
+		h2.innerHTML = `Syntax tree: </br><b style="padding-left: 20px">${formula.tree}</b>`;
 
 		let table = document.getElementById("formulaTable") as HTMLElement;
 		table.setAttribute("style", "display: block");

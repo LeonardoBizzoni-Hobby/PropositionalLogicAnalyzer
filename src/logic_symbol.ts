@@ -1,6 +1,6 @@
 export type LogicSymbol =
-    | ["Unary", string]
-    | ["Binary", string]
-    | ["NestOpen"]
-    | ["NestClose"]
-    | ["Atom", string];
+	| ["Unary", string]
+	| ["Binary", string]
+	| ["NestOpen"]
+	| ["NestClose"]
+	| ["Atom", string];
